@@ -1,0 +1,13 @@
+{
+  "name": "postman-restful-booker-api-tests",
+  "version": "1.0.0",
+  "description": "API test suite for the Restful-Booker practice API, built with Postman collections and run via Newman.",
+  "scripts": {
+    "test": "newman run collections/restful-booker.postman_collection.json -e environments/restful-booker.postman_environment.json --reporters cli,htmlextra --reporter-htmlextra-export report/report.html",
+    "test:ci": "newman run collections/restful-booker.postman_collection.json -e environments/restful-booker.postman_environment.json --reporters cli,junit --reporter-junit-export report/junit-report.xml"
+  },
+  "devDependencies": {
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
