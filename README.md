@@ -30,7 +30,7 @@ Restful-Booker exposes a simple hotel booking resource behind a token-based auth
 - **13 requests / test scripts** across 6 folders
 - Covers **positive and negative** paths, plus **authentication/authorization** checks
 - Uses **collection variables** to chain requests
-- Вocuments two of the API's non-obvious behaviors: `POST /auth` returns `200` with a `reason` field on bad credentials (not `401`), and `DELETE /booking/:id` returns `201` rather than `200`/`204` — the kind of detail worth flagging in a real bug report or API doc review, not something to silently code around
+- Documents two of the API's non-obvious behaviors: `POST /auth` returns `200` with a `reason` field on bad credentials (not `401`), and `DELETE /booking/:id` returns `201` rather than `200`/`204` 
 
 ## Setup Instructions
 
